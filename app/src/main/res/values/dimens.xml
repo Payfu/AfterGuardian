@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddind1">16dp</dimen>
+    <dimen name="width1">36dp</dimen>
+    <dimen name="width2">0dp</dimen>
+    <dimen name="height1">36dp</dimen>
+    <dimen name="textSize1">16sp</dimen>
+    <dimen name="textSize2">12sp</dimen>
+</resources>

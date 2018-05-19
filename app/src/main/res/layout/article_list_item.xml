@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/paddind1"
+    android:paddingLeft="@dimen/paddind1"
+    android:paddingRight="@dimen/paddind1"
+    android:paddingStart="@dimen/paddind1">
+
+    <ImageView
+        android:id="@+id/icon_category"
+        android:layout_width="@dimen/width1"
+        android:layout_height="@dimen/height1"
+        android:layout_gravity="center_vertical"
+        android:tint="@android:color/white"
+        tools:src="@drawable/ic_arts" />
+
+    <LinearLayout
+        android:layout_width="@dimen/width2"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/paddind1"
+        android:layout_marginStart="@dimen/paddind1"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/textColorTitle"
+            android:textSize="@dimen/textSize1"
+            tools:text="Long placeholder location that should wrap to more than 2 lines of text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/paddind1"
+        android:layout_marginStart="@dimen/paddind1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="@color/textColorDate"
+            android:textSize="@dimen/textSize2"
+            tools:text="Mar 6, 2010" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="@color/textColorDate"
+            android:textSize="@dimen/textSize2"
+            tools:text="3:00 PM" />
+
+    </LinearLayout>
+
+</LinearLayout>
