@@ -11,14 +11,12 @@ import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -108,7 +106,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
         // Append query parameter and its value. For example, the `format=geojson`
-        //
         uriBuilder.appendQueryParameter("q", category);
         uriBuilder.appendQueryParameter("page-size", "50");
         uriBuilder.appendQueryParameter("api-key", "0d39df9e-dca2-4cd4-ae32-cdc2d35ca526");

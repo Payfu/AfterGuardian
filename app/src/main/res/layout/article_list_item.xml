@@ -63,7 +63,5 @@
             android:textColor="@color/textColorDate"
             android:textSize="@dimen/textSize2"
             tools:text="3:00 PM" />
-
     </LinearLayout>
-
 </LinearLayout>

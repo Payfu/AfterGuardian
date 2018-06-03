@@ -2,7 +2,6 @@ package com.example.android.afterguardian;
 
 import android.content.AsyncTaskLoader;
 import android.content.Context;
-
 import java.util.List;
 
 public class ArticleLoader extends AsyncTaskLoader<List<Article>> {

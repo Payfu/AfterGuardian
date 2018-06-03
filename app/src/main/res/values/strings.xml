@@ -7,4 +7,7 @@
     <string name="settings_category_label">Category</string>
     <string name="settings_category_key" translatable="false">q</string>
     <string name="settings_category_default" translatable="false">photography%20AND%20environment%20AND%20high-tech</string>
+    <string-array name="settings_category_default" translatable="false">
+        <item>@array/categoryData</item>
+    </string-array>
 </resources>

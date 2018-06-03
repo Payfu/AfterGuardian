@@ -2,11 +2,9 @@ package com.example.android.afterguardian;
 
 import android.text.TextUtils;
 import android.util.Log;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,9 +21,8 @@ public final class QueryUtils {
     private QueryUtils() {
     }
 
-
     private static final String RESPONSE = "response";
-    private static final String RESULTS= "results";
+    private static final String RESULTS = "results";
 
     /**
      * Returns new URL object from the given string URL.
@@ -134,13 +131,13 @@ public final class QueryUtils {
 
                 String url = result.getString("webUrl");
 
-                JSONArray tagsArray =  result.getJSONArray("tags");
+                JSONArray tagsArray = result.getJSONArray("tags");
 
                 String author = "";
-                if(tagsArray.length() > 0){
+                if (tagsArray.length() > 0) {
                     JSONObject resultTag = tagsArray.getJSONObject(0);
                     author = resultTag.getString("webTitle");
-                }else {
+                } else {
                     author = "Unknown author";
                 }
 

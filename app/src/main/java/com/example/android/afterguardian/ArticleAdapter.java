@@ -2,6 +2,7 @@ package com.example.android.afterguardian;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,6 +38,11 @@ public class ArticleAdapter extends ArrayAdapter {
         // Category
         ImageView iconView = listItemView.findViewById(R.id.icon_category);
         String icon = currentArticle.getPillarName();
+        String categoryName = icon;
+        Log.i("MANU INFO", "NAME: " + icon);
+
+        // If icon is not... so is global
+        if(!icon.equals("news") && !icon.equals("lifestyle") && !icon.equals("arts") ){ icon = "global";}
         int imgId = getContext().getResources().getIdentifier("drawable/ic_" + icon, "id", getContext().getPackageName());
         iconView.setImageResource(imgId);
         iconView.setContentDescription(icon);
@@ -44,7 +50,7 @@ public class ArticleAdapter extends ArrayAdapter {
         // Title
         TextView titleView = listItemView.findViewById(R.id.title);
 
-        titleView.setText("("+ currentArticle.getAuthor()+") " + currentArticle.getTitleArticle());
+        titleView.setText("["+ categoryName +"] ("+ currentArticle.getAuthor()+") " + currentArticle.getTitleArticle());
         titleView.setLines(2);
 
         // Publication Date/time
